@@ -1,0 +1,277 @@
+/*-------------- Font Upload------------ */
+@font-face {
+  font-family: "gilroy-regular";
+  src: url(assets/fonts/Gilroy-Regular.otf);
+  src: url(assets/fonts/Gilroy-Regular.ttf);
+  src: url(assets/fonts/Gilroy-Regular.woff);
+  src: url(assets/fonts/Gilroy-Regular.woff2);
+}
+@font-face {
+  font-family: "gilroy-bold";
+  src: url(assets/fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "gilroy-extra-bold";
+  src: url(assets/fonts/Gilroy-ExtraBold.ttf);
+}
+/* RUBIK BOLD */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap");
+/* ------------ END FONT UPLOAD------------ */
+/* ------------RESET CSS---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------END RESET CSS---------- */
+
+/* -----------Layout CSS --------*/
+
+/*--------------------- COMMON CSS------------------- */
+body {
+  font-family: "gilroy";
+}
+/*-------- Layout CSS------------*/
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/*-------- Layout CSS------------*/
+/*--------------  BUTTON CSS----------- */
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: auto;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "gilroy-bold";
+  background-color: red;
+  color: #ffffff;
+}
+/*------------------- END COMMON CSS------------- */
+.custom-shape-divider-bottom-1720885984 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720885984 svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 148px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1720885984 .shape-fill {
+  fill: #ffffff;
+}
+/*---------STARTED MENU SECTION----- */
+
+header {
+  background-image: linear-gradient(#7b11f9, #7922d8, #3636b2);
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  z-index: -111;
+  position: relative;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.menu-btn-section a {
+  font-family: "gilroy-bold";
+  text-decoration: none;
+  padding-right: 30px;
+  color: #ffffff;
+}
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+.menu-btn {
+  display: none;
+}
+
+/*---------ENDED MENU SECTION----- */
+/* ----------STARTED HERO SECTION---------- */
+.hero-row-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 40px;
+  /* gap: 50px; */
+}
+/* -------STARTED hero-coloum-left--------- */
+.hero-coloum-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 65%;
+  max-width: 541px;
+}
+.hero-coloum-one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-coloum-one h1 {
+  max-width: 541px;
+  font-family: "gilroy-bold";
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 65px;
+}
+.hero-coloum-one p {
+  max-width: 500px;
+  color: #ffffffa0;
+  font-family: "gilroy-regular";
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 100;
+}
+.hero-coloum-next {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-coloum-next p {
+  color: #ffffff;
+  font-family: "gilroy-bold";
+  font-size: 13px;
+}
+.hero-button {
+  max-width: 195px;
+}
+.hero-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "gilroy-bold";
+}
+/* -------END hero-coloum-left--------- */
+/* -------START hero-coloum-right--------- */
+.hero-coloum-right {
+  width: 35%;
+  position: relative;
+  text-align: right;
+}
+
+.main-image-right {
+  width: 100%;
+  border-radius: 10px;
+}
+.top-right-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  bottom: 140px;
+}
+.middile-img {
+  position: absolute;
+  left: auto;
+  right: -83px;
+  top: 264px;
+}
+.behind-img {
+  position: absolute;
+  z-index: -1;
+  right: 86px;
+  top: 122px;
+}
+.top-right-corner {
+  position: absolute;
+  top: -30px;
+  left: auto;
+  right: -43px;
+  z-index: -1;
+}
+/*---------STARTED RESPONSIVE CSS----------- */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn-section {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(137, 43, 226, 0.823);
+    backdrop-filter: blur(5px);
+    width: 65%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transition: right 0.9s ease;
+  }
+
+  .menu-btn-section a {
+    padding: 20px;
+  }
+  .menu-btn i {
+    color: #ffffff;
+  }
+  .menu-btn i {
+    font-size: 2em;
+  }
+  .menu-btn .fa-xmark {
+    margin: 0 10px;
+    background-color: transparent;
+    font-size: 2.3em;
+  }
+
+  /*-------------- STARTED HERO SECTION----------- */
+  .hero-coloum-left {
+    width: 100%;
+  }
+
+  .hero-coloum-right {
+    width: 100%;
+  }
+
+  .hero-row-inner {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  img.top-right-corner {
+    right: -20px;
+  }
+
+  img.middile-img {
+    right: 90px;
+    /* display: none; */
+    width: 100%;
+    top: 349px;
+  }
+
+  img.behind-img {
+    right: 34px;
+  }
+
+  /* --------------STARTED WAVES IN HEADER-------- */
+  .custom-shape-divider-bottom-1720885984 {
+    display: none;
+  }
+  /* --------------ENDED WAVES IN HEADER-------- */
+}

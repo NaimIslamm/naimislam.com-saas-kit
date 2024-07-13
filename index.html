@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAAS Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1ce6f653f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-scetion-wrapper">
+      <div class="header-section-inner">
+        <!-------STARTED MENU SECTION---------->
+        <nav>
+          <div class="main-menu">
+            <div class="logo">
+              <a href="index.html">NaimIslam.com</a>
+            </div>
+            <div class="menu-btn-section sidebar">
+              <!-- close button -->
+              <a href="#" class="menu-btn"
+                ><i class="fa-solid fa-xmark" onclick="hideSidebar()"></i
+              ></a>
+              <!-- close button -->
+              <a href="index.html">Homes</a>
+              <a href="">Pages</a>
+              <a href="">Support</a>
+              <a
+                href="https://www.linkedin.com/in/naimmislam-seo-expert?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXNr77fnrTI2R1%2FQe2Rf3XA%3D%3D"
+                >Contact</a
+              >
+              <div class="nav-button btn">
+                <a
+                  href="https://www.linkedin.com/in/naimmislam-seo-expert?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXNr77fnrTI2R1%2FQe2Rf3XA%3D%3D"
+                  >Get Started Now</a
+                >
+              </div>
+            </div>
+            <!-- HAMBURGER -->
+            <div class="menu-btn">
+              <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+            </div>
+            <!-- HAMBURGER -->
+          </div>
+        </nav>
+      </div>
+      <!-- -----ENDED MENU SECTION-------- -->
+      <section class="hero-section-wrapper">
+        <div class="hero-section-inner container">
+          <div class="hero-row">
+            <div class="hero-row-inner">
+              <div class="hero-coloum-left">
+                <div class="hero-coloum-one">
+                  <h1>Manage your remote team work</h1>
+                  <p>
+                    With lots of unique blocks, you can easily build a page
+                    without coding. Build your next consultancy website within
+                    few minutes.
+                  </p>
+                  <div class="hero-button btn">
+                    <a href="#">Explore more</a>
+                  </div>
+                </div>
+                <div class="hero-coloum-next">
+                  <p>Download our app</p>
+                  <div class="hero-coloum-next-image">
+                    <img src="assets/images/App Store.png" alt="" />
+                    <img src="assets/images/Play Store.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="hero-coloum-right">
+                <div class="coloum-right-main-image">
+                  <img
+                    src="assets/images/Dots.png"
+                    alt=""
+                    class="top-right-corner"
+                  />
+                  <img
+                    src="assets/images/App-Single-01.png"
+                    alt=""
+                    class="main-image-right"
+                  />
+
+                  <img
+                    src="assets/images/App-Single-02.png"
+                    alt=""
+                    class="middile-img"
+                  />
+                  <img
+                    src="assets/images/Rectangle.png"
+                    alt=""
+                    class="behind-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="custom-shape-divider-bottom-1720885984">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- JS -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <!-- JS -->
+  </body>
+</html>

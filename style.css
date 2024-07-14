@@ -53,6 +53,7 @@ body {
   color: #ffffff;
 }
 /*------------------- END COMMON CSS------------- */
+/* ---------WAVE BACKGROUND-------------- */
 .custom-shape-divider-bottom-1720885984 {
   position: absolute;
   bottom: 0;
@@ -74,6 +75,7 @@ body {
 .custom-shape-divider-bottom-1720885984 .shape-fill {
   fill: #ffffff;
 }
+/* ---------WAVE BACKGROUND-------------- */
 /*---------STARTED MENU SECTION----- */
 
 header {
@@ -82,7 +84,7 @@ header {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
-  z-index: -111;
+  z-index: 1;
   position: relative;
 }
 
@@ -91,6 +93,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+  z-index: 1;
 }
 .menu-btn-section a {
   font-family: "gilroy-bold";
@@ -116,7 +119,6 @@ header {
   justify-content: space-between;
   margin-top: 50px;
   padding: 40px;
-  /* gap: 50px; */
 }
 /* -------STARTED hero-coloum-left--------- */
 .hero-coloum-left {
@@ -181,7 +183,6 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-
   bottom: 140px;
 }
 .middile-img {
@@ -203,6 +204,119 @@ header {
   right: -43px;
   z-index: -1;
 }
+/* ------------START TEAM MEMBER SECTION------------- */
+.team-member-inner {
+  max-width: 992px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 190px auto;
+  position: relative;
+  padding: 40px;
+}
+.team-member-left {
+  text-align: center;
+  width: 60%;
+}
+
+.team-member-images {
+  position: relative;
+}
+.team-member-1 {
+  position: absolute;
+  top: -148px;
+  right: 214px;
+}
+img.team-member-2 {
+  position: absolute;
+  top: -77px;
+  right: -8px;
+}
+
+img.team-member-3 {
+  position: absolute;
+  top: 81px;
+  right: -8px;
+}
+
+img.team-member-4 {
+  position: absolute;
+  right: 104px;
+  top: 170px;
+  bottom: auto;
+}
+
+img.team-member-5 {
+  position: absolute;
+  bottom: -198px;
+  right: 215px;
+}
+
+img.team-member-6 {
+  position: absolute;
+  left: -30px;
+  top: 150px;
+}
+
+img.team-member-7 {
+  position: absolute;
+  left: -16px;
+  top: -74px;
+}
+.team-member-dots {
+  position: absolute;
+  left: 102px;
+  top: 53px;
+  z-index: -1;
+}
+.team-member-Rectangle {
+  position: absolute;
+  bottom: -69px;
+  right: 100px;
+  z-index: -1;
+}
+/* -------------STARTED Team-Member-Right-------------  */
+.team-member-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.member-right-first-row h2 {
+  max-width: 375px;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "gilroy-bold";
+  letter-spacing: -1.8px;
+}
+.member-right-first-row p {
+  max-width: 375px;
+  font-size: 19px;
+  line-height: 32px;
+  font-family: "gilroy-regular";
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.517);
+}
+.member-right-second-row h4 {
+  /* max-width: 201px; */
+  font-size: 21px;
+  line-height: 32px;
+  font-family: "gilroy-bold";
+  letter-spacing: -0.5px;
+}
+.member-right-second-row p {
+  /* max-width: 201px; */
+  font-size: 17px;
+  line-height: 29px;
+  font-family: "gilroy-regular";
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.517);
+}
+
+/* -------------ENDED Team-Member-Right-------------  */
+
+/* ---------ENDED TEAM MEMBER SECTION--------------- */
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -274,4 +388,60 @@ header {
     display: none;
   }
   /* --------------ENDED WAVES IN HEADER-------- */
+
+  .team-member-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .team-member-left {
+    width: 100%;
+  }
+
+  .team-member-right {
+    width: 100%;
+  }
+
+  img.team-member-1 {
+    right: 169px;
+  }
+
+  img.team-member-2 {
+    top: -147px;
+    right: -60px;
+  }
+  img.team-member-3 {
+    right: -84px;
+  }
+
+  img.team-member-4 {
+    right: -32px;
+  }
+
+  img.team-member-5 {
+    bottom: 0;
+    right: 191px;
+  }
+
+  img.team-member-6 {
+    left: -68px;
+  }
+
+  img.team-member-dots {
+    display: none;
+  }
+
+  img.team-member-Rectangle {
+    right: 50px;
+  }
+
+  img.team-member-7 {
+    left: 47px;
+    top: -139px;
+  }
+  .member-right-first-row {
+    margin: 30px auto;
+  }
 }

@@ -369,7 +369,7 @@ img.team-member-7 {
   }
 
   img.top-right-corner {
-    right: -20px;
+    right: -16px;
   }
 
   img.middile-img {
@@ -393,7 +393,7 @@ img.team-member-7 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 90px;
   }
 
   .team-member-left {
@@ -401,23 +401,26 @@ img.team-member-7 {
   }
 
   .team-member-right {
+    gap: 0;
     width: 100%;
   }
 
   img.team-member-1 {
-    right: 169px;
+    right: 154px;
   }
 
   img.team-member-2 {
-    top: -147px;
-    right: -60px;
+    top: -142px;
+    right: -39px;
   }
   img.team-member-3 {
-    right: -84px;
+    right: -24px;
+    top: 182px;
   }
 
   img.team-member-4 {
-    right: -32px;
+    right: 69px;
+    top: 195px;
   }
 
   img.team-member-5 {

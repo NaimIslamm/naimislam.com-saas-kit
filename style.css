@@ -312,10 +312,6 @@ img.team-member-7 {
   color: rgba(0, 0, 0, 0.517);
 }
 
-/* .remote-team-main-image {
-  max-height: 558px;
-} */
-
 /* -------------ENDED Team-Member-Right-------------  */
 
 /* ---------ENDED TEAM MEMBER SECTION--------------- */
@@ -405,9 +401,95 @@ img.green-dotted-remote-team {
   left: 25px;
   z-index: -1;
 }
+.remote-team-main-image {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 
 /* --------ENDED REMOTE TEAM ----------------------*/
+/* ---------STARTED HOW WORK SECTION---------- */
+.how-work-inner {
+  max-width: 1010px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 10px auto;
+  padding: 40px;
+}
 
+.how-work-first-row {
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.how-work-first-row h3 {
+  font-size: 48px;
+  font-family: "gilroy-bold";
+  line-height: 58px;
+  letter-spacing: -1.8px;
+}
+
+.how-work-first-row p {
+  font-size: 19px;
+  max-width: 468px;
+  text-align: center;
+  font-family: "gilroy-regular";
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.how-work-main-coloum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.how-work-child-coloum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.heading-sequence {
+  text-align: center;
+}
+.heading-sequence h4 {
+  background-color: #f64b4b;
+  width: 73px;
+  height: 73px;
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 36px;
+  font-family: "gilroy-bold";
+  color: #ffffff;
+}
+.green h4 {
+  background-color: #68d585;
+}
+.blue h4 {
+  background-color: #473bf0;
+}
+.how-work-child-title h4 {
+  font-size: 21px;
+  font-family: "gilroy-bold";
+  line-height: 32px;
+}
+.how-work-child-p p {
+  color: #161c2d;
+  max-width: 253px;
+  font-family: "gilroy-regular";
+  line-height: 29px;
+}
+/* ---------ENDED HOW WORK SECTION---------- */
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -562,4 +644,13 @@ img.green-dotted-remote-team {
   img.green-dotted-remote-team {
     left: -25px;
   }
+  /*---------------- STARTED HOW WORK SECTION------------- */
+  .how-work-main-coloum {
+    flex-direction: column;
+  }
+
+  .how-work-first-row {
+    text-align: center;
+  }
+  /*---------------- ENDED HOW WORK SECTION------------- */
 }

@@ -126,7 +126,6 @@ header {
   flex-direction: column;
   gap: 30px;
   width: 65%;
-  max-width: 541px;
 }
 .hero-coloum-one {
   display: flex;
@@ -200,8 +199,7 @@ header {
 .top-right-corner {
   position: absolute;
   top: -30px;
-  left: auto;
-  right: -43px;
+  right: -34px;
   z-index: -1;
 }
 /* ------------START TEAM MEMBER SECTION------------- */
@@ -281,7 +279,7 @@ img.team-member-7 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 .member-right-first-row h2 {
   max-width: 375px;
@@ -314,9 +312,102 @@ img.team-member-7 {
   color: rgba(0, 0, 0, 0.517);
 }
 
+/* .remote-team-main-image {
+  max-height: 558px;
+} */
+
 /* -------------ENDED Team-Member-Right-------------  */
 
 /* ---------ENDED TEAM MEMBER SECTION--------------- */
+
+/* --------STARTED REMOTE TEAM ----------------------*/
+.remote-team-inner {
+  max-width: 1110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 190px auto;
+  padding: 40px;
+  position: relative;
+}
+.remote-team-right {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.remote-team-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.remote-team-left-first-row h2 {
+  max-width: 469px;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "gilroy-bold";
+  letter-spacing: -1.8px;
+}
+.remote-team-left-first-row p {
+  max-width: 375px;
+  font-size: 19px;
+  line-height: 32px;
+  font-family: "gilroy-regular";
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.517);
+}
+.remote-team-left-second-row h4 {
+  font-size: 21px;
+  line-height: 32px;
+  font-family: "gilroy-bold";
+  letter-spacing: -0.5px;
+}
+.remote-team-left-second-row p {
+  font-size: 17px;
+  line-height: 29px;
+  font-family: "gilroy-regular";
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.517);
+}
+.remote-team-left-first-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.remote-team-left-second-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+img.content-remote-team {
+  position: absolute;
+  top: 115px;
+  right: 248px;
+}
+
+img.remote-top-right-corner {
+  position: absolute;
+  top: -32px;
+  right: 93px;
+  z-index: -1;
+}
+
+img.Group-4-remote-team {
+  position: absolute;
+  top: 252px;
+  left: 53px;
+}
+img.green-dotted-remote-team {
+  position: absolute;
+  bottom: 71px;
+  left: 25px;
+  z-index: -1;
+}
+
+/* --------ENDED REMOTE TEAM ----------------------*/
+
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -441,10 +532,34 @@ img.team-member-7 {
   }
 
   img.team-member-7 {
-    left: 47px;
+    left: 70px;
     top: -139px;
   }
   .member-right-first-row {
     margin: 30px auto;
+  }
+  /* -------STARTED REMOTE TEAM SECTION---------- */
+  .remote-team-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .remote-team-left {
+    width: 100%;
+  }
+
+  .remote-team-right {
+    width: 100%;
+  }
+
+  img.remote-top-right-corner {
+    display: none;
+  }
+  img.content-remote-team {
+    right: -22px;
+  }
+
+  img.green-dotted-remote-team {
+    left: -25px;
   }
 }

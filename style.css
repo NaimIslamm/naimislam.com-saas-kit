@@ -414,6 +414,9 @@ img.green-dotted-remote-team {
 
 /* --------ENDED REMOTE TEAM ----------------------*/
 /* ---------STARTED HOW WORK SECTION---------- */
+.how-work-wrapper {
+  position: relative;
+}
 .how-work-inner {
   max-width: 1010px;
   display: flex;
@@ -495,7 +498,75 @@ img.green-dotted-remote-team {
   font-family: "gilroy-regular";
   line-height: 29px;
 }
+
 /* ---------ENDED HOW WORK SECTION---------- */
+/*----------- STARTED VIDEO SECTION---------- */
+.Video {
+  /* position: absolute; */
+  margin: 10px auto;
+}
+/*-----------ENDED VIDEO SECTION---------- */
+
+/* -------started TESTIMONIAL section---------- */
+
+.testimonial-wrapper {
+  top: 0;
+  background-image: linear-gradient(#313c59, #161c2d);
+}
+.testimonial-inner {
+  position: relative;
+  max-width: 1009px;
+  margin: 10px auto;
+}
+.testimonial-frst-row-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.testimonial-child-fst-head h3 {
+  max-width: 630px;
+  font-size: 48px;
+  font-family: "gilroy-bold";
+  line-height: 58px;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+}
+.body-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+.box-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.box-title h4 {
+  font-size: 21px;
+  line-height: 32px;
+  font-family: "gilroy-bold";
+  color: #ffffff;
+}
+.box-prgph p {
+  max-width: 274px;
+  font-size: 17px;
+  line-height: 29px;
+  font-family: "gilroy-regular";
+  color: rgba(245, 241, 241, 0.517);
+}
+.testimonial-child-fst-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+/* -------ENDED TESTIMONIAL section---------- */
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -664,5 +735,17 @@ img.green-dotted-remote-team {
   .how-work-first-row {
     text-align: center;
   }
+
+  .Video img {
+    padding: 40px;
+    width: 100%;
+  }
   /*---------------- ENDED HOW WORK SECTION------------- */
+  .testimonial-frst-row-main {
+    padding: 40px;
+  }
+
+  .testimonial-child-fst-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

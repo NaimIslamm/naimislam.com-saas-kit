@@ -510,7 +510,7 @@ img.green-dotted-remote-team {
 /* -------started TESTIMONIAL section---------- */
 
 .testimonial-wrapper {
-  background-image: linear-gradient(#313c59, #161c2d);
+  background-image: linear-gradient(to left, #313c59, #161c2d);
 }
 .testimonial-inner {
   position: relative;
@@ -622,6 +622,93 @@ img.green-dotted-remote-team {
 }
 
 /* -------ENDED TESTIMONIAL section---------- */
+/*----------- STARTED PRICING SECTION------------- */
+.pricing-wrapper {
+  background-color: #f4f7fa;
+  margin-top: 50px;
+}
+.pricing-fst-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pricing-fst-row h3 {
+  max-width: 630px;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "gilroy-bold";
+  letter-spacing: -1.8px;
+}
+.pricing-fst-row p {
+  max-width: 468px;
+  font-size: 19px;
+  line-height: 32px;
+  font-family: "gilroy-regular";
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.517);
+  text-align: center;
+}
+/*-----------ENDED PRICING SECTION------------- */
+/* -------STARTED PACKAGES SECTION------------- */
+.pricing-coloum-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid black;
+}
+
+.package-title {
+  color: #f64b4b;
+  font-size: 13px;
+  font-family: "gilroy-bold";
+  text-transform: uppercase;
+}
+.number {
+  font-family: "gilroy-bold";
+  font-size: 33px;
+}
+.pricing-scnd-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 700px;
+  margin: 100px auto;
+}
+.pricing-scnd-row-coloum {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #e7e9ed;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.unlimited-pack {
+  background-color: #ffffff;
+}
+.pricing-scnd-row-coloum P {
+  display: inline;
+  padding: 20px 10px;
+  border-bottom: 1px solid #e7e9ed;
+  font-family: "gilroy-regular";
+}
+.pricing-coloum-title p {
+  border-bottom: none;
+}
+.black-btn {
+  background-color: #161c2d;
+}
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -790,7 +877,9 @@ img.green-dotted-remote-team {
   .how-work-first-row {
     text-align: center;
   }
-
+  .heading-sequence h4 {
+    padding: 14px;
+  }
   .Video img {
     padding: 40px;
     width: 100%;
@@ -801,7 +890,7 @@ img.green-dotted-remote-team {
   }
 
   .testimonial-child-fst-body {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .second-row-main-1st-child {
     align-items: unset;
@@ -809,5 +898,14 @@ img.green-dotted-remote-team {
 
   .fst-child-prgrph p {
     font-size: 13px;
+  }
+  /* --------STARTED PRICING SECTION */
+  .pricing-scnd-row {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .pricing-scnd-row-coloum {
+    width: 100%;
   }
 }

@@ -721,6 +721,48 @@ img.green-dotted-remote-team {
   text-decoration: none;
   color: #ffffff;
 }
+/*--------------- STARTED FOOTER SECTION------------ */
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.footer-fst-coloum {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.footer-scnd-coloum {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.footer-coloum {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+}
+.first-row-head-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.first-row-head p {
+  color: #161c2d8a;
+  font-size: 15px;
+  font-family: "gilroy-regular";
+}
+.first-row-head-details a {
+  color: #161c2d;
+  text-decoration: none;
+  font-family: "gilroy-regular";
+  font-size: 17px;
+  line-height: 40px;
+}
 /*---------STARTED RESPONSIVE CSS----------- */
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -898,9 +940,6 @@ img.green-dotted-remote-team {
     width: 100%;
   }
   /*---------------- ENDED HOW WORK SECTION------------- */
-  .testimonial-frst-row-main {
-    /* padding: 40px; */
-  }
 
   .testimonial-child-fst-body {
     grid-template-columns: repeat(1, 1fr);
@@ -921,5 +960,15 @@ img.green-dotted-remote-team {
 
   .pricing-scnd-row-coloum {
     width: 100%;
+  }
+  /*------------- Footer section started--------- */
+  .footer-fst-coloum {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .first-row-head p {
+    font-size: 20px;
   }
 }

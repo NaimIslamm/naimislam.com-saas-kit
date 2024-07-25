@@ -617,6 +617,10 @@ img.green-dotted-remote-team {
   font-size: 17px;
   font-family: "gilroy-bold";
 }
+.testimonial-btn button {
+  background-color: transparent;
+  border: 1px transparent solid;
+}
 
 /* -------ENDED TESTIMONIAL section---------- */
 /*----------- STARTED PRICING SECTION------------- */

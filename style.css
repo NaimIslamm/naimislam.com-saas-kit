@@ -523,7 +523,7 @@ img.green-dotted-remote-team {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  padding-bottom: 50px;
+  padding: 40px;
 }
 
 .testimonial-child-fst-head h3 {
@@ -627,11 +627,15 @@ img.green-dotted-remote-team {
   background-color: #f4f7fa;
   margin-top: 50px;
 }
+.pricing-inner {
+  padding: 40px;
+}
 .pricing-fst-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 10px;
 }
 .pricing-fst-row h3 {
@@ -657,8 +661,15 @@ img.green-dotted-remote-team {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e7e9ed;
+}
+.pricing-coloum-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .package-title {
@@ -669,25 +680,25 @@ img.green-dotted-remote-team {
 }
 .number {
   font-family: "gilroy-bold";
-  font-size: 33px;
+  font-size: 40px;
 }
 .pricing-scnd-row {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 700px;
+  width: 50%;
   margin: 100px auto;
 }
 .pricing-scnd-row-coloum {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin: 0 auto;
-  padding: 8px;
+  padding: 18px;
   border: 1px solid #e7e9ed;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .unlimited-pack {
@@ -700,6 +711,7 @@ img.green-dotted-remote-team {
   font-family: "gilroy-regular";
 }
 .pricing-coloum-title p {
+  font-family: "gilroy-bold";
   border-bottom: none;
 }
 .black-btn {
@@ -797,8 +809,8 @@ img.green-dotted-remote-team {
   }
 
   .team-member-right {
-    gap: 0px;
     width: 100%;
+    margin-top: 50px;
   }
 
   img.team-member-1 {
@@ -852,6 +864,7 @@ img.green-dotted-remote-team {
   }
 
   .remote-team-left {
+    text-align: center;
     width: 100%;
   }
 
@@ -886,7 +899,7 @@ img.green-dotted-remote-team {
   }
   /*---------------- ENDED HOW WORK SECTION------------- */
   .testimonial-frst-row-main {
-    padding: 40px;
+    /* padding: 40px; */
   }
 
   .testimonial-child-fst-body {
@@ -901,8 +914,9 @@ img.green-dotted-remote-team {
   }
   /* --------STARTED PRICING SECTION */
   .pricing-scnd-row {
+    width: 100%;
     flex-direction: column;
-    padding: 30px;
+    gap: 30px;
   }
 
   .pricing-scnd-row-coloum {

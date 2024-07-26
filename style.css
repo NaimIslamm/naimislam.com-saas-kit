@@ -95,11 +95,44 @@ header {
   padding: 25px;
   z-index: 1;
 }
+
+.menu-btn-section {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 36px; */
+}
 .menu-btn-section a {
+  position: relative;
   font-family: "gilroy-bold";
   text-decoration: none;
-  padding-right: 30px;
   color: #ffffff;
+  padding: 0 10px;
+}
+.nav-button a {
+  margin: auto;
+}
+
+.menu-btn-section a:after {
+  content: "";
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.4s ease;
+}
+.menu-btn-section a:hover::after {
+  width: 100%;
+}
+.nav-button a:hover::after {
+  width: 0%;
+}
+.logo {
+  width: 40%;
 }
 .logo a {
   text-decoration: none;
@@ -782,22 +815,28 @@ img.green-dotted-remote-team {
     top: 0;
     right: 0;
     z-index: 999;
+    gap: 25px;
     transition: right 0.9s ease;
   }
 
   .menu-btn-section a {
-    padding: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
   }
+
   .menu-btn i {
     color: #ffffff;
   }
   .menu-btn i {
-    font-size: 2em;
-  }
-  .menu-btn .fa-xmark {
-    margin: 0 10px;
-    background-color: transparent;
     font-size: 2.3em;
+  }
+
+  .fa-xmark i {
+    margin: 0 10px;
+    font-size: 2.3em;
+  }
+  .fa-xmark i:hover::after {
+    width: 0%;
   }
 
   /*-------------- STARTED HERO SECTION----------- */

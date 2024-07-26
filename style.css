@@ -54,7 +54,7 @@ body {
 }
 /*------------------- END COMMON CSS------------- */
 /* ---------WAVE BACKGROUND-------------- */
-.custom-shape-divider-bottom-1720885984 {
+.wave-bottom-one {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -64,7 +64,7 @@ body {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1720885984 svg {
+.wave-bottom-one svg {
   position: relative;
   display: block;
   width: calc(152% + 1.3px);
@@ -72,7 +72,29 @@ body {
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1720885984 .shape-fill {
+.wave-bottom-one .shape-fill {
+  fill: #ffffff;
+}
+
+.wave-bottom-three {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom-three svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 88px;
+  transform: rotateY(180deg);
+}
+
+.wave-bottom-three .shape-fill {
   fill: #ffffff;
 }
 /* ---------WAVE BACKGROUND-------------- */
@@ -660,6 +682,7 @@ img.green-dotted-remote-team {
 .pricing-wrapper {
   background-color: #f4f7fa;
   margin-top: 50px;
+  position: relative;
 }
 .pricing-inner {
   padding: 40px;

@@ -97,6 +97,25 @@ body {
 .wave-bottom-three .shape-fill {
   fill: #ffffff;
 }
+.custom-shape-divider-top-1722069678 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1722069678 svg {
+  position: relative;
+  display: block;
+  width: calc(272% + 1.3px);
+  height: 126px;
+}
+
+.custom-shape-divider-top-1722069678 .shape-fill {
+  fill: #ffffff;
+}
 /* ---------WAVE BACKGROUND-------------- */
 /*---------STARTED MENU SECTION----- */
 
@@ -479,7 +498,7 @@ img.green-dotted-remote-team {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 10px auto;
+  margin: 500px auto;
   padding: 40px;
 }
 
@@ -556,9 +575,17 @@ img.green-dotted-remote-team {
 
 /* ---------ENDED HOW WORK SECTION---------- */
 /*----------- STARTED VIDEO SECTION---------- */
-.Video {
-  /* position: absolute; */
-  margin: 10px auto;
+.Video-wrapper {
+  position: relative;
+}
+
+.Video-wrapper img {
+  width: 100%;
+  position: absolute;
+  padding: 40px;
+  top: -400px;
+  bottom: 10%;
+  z-index: 1;
 }
 /*-----------ENDED VIDEO SECTION---------- */
 
@@ -566,6 +593,7 @@ img.green-dotted-remote-team {
 
 .testimonial-wrapper {
   background-image: linear-gradient(to left, #313c59, #161c2d);
+  position: relative;
 }
 .testimonial-inner {
   position: relative;
@@ -579,6 +607,9 @@ img.green-dotted-remote-team {
   align-items: center;
   gap: 100px;
   padding: 40px;
+}
+.testimonial-child-fst-head {
+  margin-top: 225px;
 }
 
 .testimonial-child-fst-head h3 {

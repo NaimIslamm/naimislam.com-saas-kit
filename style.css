@@ -996,6 +996,7 @@ img.green-dotted-remote-team {
   }
 
   img.team-member-7 {
+    display: none;
     left: 48px;
     top: -139px;
   }

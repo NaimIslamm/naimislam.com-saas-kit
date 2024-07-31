@@ -957,6 +957,9 @@ img.green-dotted-remote-team {
     width: 100%;
     margin-top: 50px;
   }
+  .team-member-images {
+    display: none;
+  }
 
   img.team-member-1 {
     right: 154px;
